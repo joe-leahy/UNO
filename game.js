@@ -1,8 +1,19 @@
+//initialize global variables
+
+    const STARTING_HAND = 7;
+    const DRAW_FOUR = 4;
+    const DRAW_TWO = 2;
+
+//======================================== 
+
+
 class Game {
     constructor(){
     }
 
-    initialize(){
+    initialize(){    
+
+        const allCards = new Deck();
         allCards.generateCards();
         allCards.shuffle();
 
@@ -18,6 +29,3 @@ class Game {
 
     }
 }
-
-const game = new Game
-game.initialize();
