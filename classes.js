@@ -72,6 +72,16 @@ class Deck {
         return dealtHand
    }
 
+
+   render(){
+    let player1 = document.querySelector('#top')
+    let cards = document.createElement('div')
+    cards.textContent = dealtHand;
+    player1.append(cards)
+
+   }
+
+
 }
     
 

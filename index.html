@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,24 @@
     <title>UNO</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <div id="top">
-        <div id="player" class="card">UNO Card</div>
+    <div id="top" class="gameboard">
+        <div id="player" class="card">render player cards here</div>
     </div>
-    <div class="clockwiseSpin"></div>
-  
-    <div id="bottom">
-        <div id="opponent" class="card">UNO Card</div>
+
+    <div  id="middle">render played cards here
+        
     </div>
-     
-   
+
+    <div class="gameboard"id="bottom">
+        <div id="opponent">render opponent cards here</div>
+    </div>
+
+<script src="classes.js"></script>
+<script src="game.js"></script>
+<script src="index.js"></script>
 </body>
-    <script src="classes.js"></script>
-    <script src="game.js"></script>
-    <script src="index.js"></script>
+
+
 </html>

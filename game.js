@@ -21,7 +21,8 @@ class Game {
     hand2.hand.push(allCards.deal(STARTING_HAND));
     //all players hands
     const hands = [hand1, hand2];
-
+    console.log(allCards);
     return hands;
+    allCards.render();
   }
 }
