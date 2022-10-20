@@ -77,11 +77,11 @@ class Deck {
     let player1 = document.querySelector('#top')
     let cards = document.createElement('div')
 
-    for (const card in dealtHand){
+    for (const card of dealtHand){
         let fullCard = document.createElement('span')
         fullCard.innerHTML = `
-        Card: ${card.indexOf}
-        Color: ${card.indexOf(color)}
+        Card: ${card.index}
+        Color: ${card.color}
         `
         cards.append(card)
 

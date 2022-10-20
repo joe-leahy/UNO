@@ -28,5 +28,3 @@ class Game {
 }
 
 allCards.render();
-allCards.render();
-allCards.render();
