@@ -17,9 +17,9 @@ class Hand {
     }
 
     addCard(card){
-        
-        
         this.hand.push(card)
+        deck.pop(card)
+        // TODO FIX deck
     }
 
 
@@ -39,20 +39,34 @@ class Deck {
             const colors = ["Red", "Yellow", "Green", "Blue"]
             for (let index in cardValues){
                 for (let color of colors){
-                    console.log(index , color)
+                    // console.log(index , color)
                     this.deck.push(new Card(index, color))
                     // new Deck.generateCards(index, color)
                 }
             }
         }
 
-       
-    
-    
+          
+    shuffle(){
+        const shuffled_deck = [];
+	    while (this.deck.length) {
+            let randomCard = (this.deck.splice(~~(Math.random() * this.deck.length), 1)[0]);
+            shuffled_deck.push(randomCard)
+            
+	    }
+        this.deck = shuffled_deck
+    }
+
     draw(){
-        
+        let cardOnTop = this.deck[0]
+        // TODO Add card to hand class
+        allCards.deck.shift()
+        console.log(cardOnTop)
+        console.log(this.deck)
+   
     }
 }
+
     
 
 const cardValues = {
