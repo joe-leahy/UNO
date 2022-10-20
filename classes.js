@@ -53,9 +53,9 @@ class Deck {
   }
 
   draw() {
-    let cardOnTop = this.deck[0];
+    let cardOnTop = this.deck.shift();
     // TODO Add card to hand class
-    this.deck.shift();
+    
     
     return cardOnTop;
   }
@@ -63,10 +63,10 @@ class Deck {
 
   
 // Array[Hands] deal('num of players', 'num of cards')
-  deal(STARTING_HAND) {
+  deal(numCards) {
    const dealtHand = [];
 
-    for(let i=0; i < STARTING_HAND;i++){
+    for(let i=0; i < numCards;i++){
         dealtHand.push(this.draw())
     }
         return dealtHand
@@ -75,7 +75,6 @@ class Deck {
 }
     
 
-  
 
 
 const cardValues = {
