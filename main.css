@@ -12,7 +12,7 @@ body{
 	display:flex;
 	flex-direction: column;
 	justify-content: space-around;
-	background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fstaticctf.akamaized.net%2F8aefmxkxpxwl%2F1qsQOdn4SDZywxdcULpQDR%2F7312cd4973de34cbecac302d033bb5d2%2FUNO_1920x1080.jpg%3Fw%3D1920&imgrefurl=https%3A%2F%2Fwww.ubisoft.com%2Fen-us%2Fcompany%2Fabout-us%2Four-brands%2Funo&tbnid=AwYqdZ7L69ZdbM&vet=12ahUKEwis_bS13u_6AhWZLDQIHTeXAR0QMygIegUIARDpAQ..i&docid=V13Lazylh7kmKM&w=1920&h=1080&q=uno%20background&ved=2ahUKEwis_bS13u_6AhWZLDQIHTeXAR0QMygIegUIARDpAQ")
+	background-color: beige;
 }
 
 #top,
@@ -23,17 +23,17 @@ body{
 }
 
 #top {
-  /* background-color: lightblue; */
+  background-color: lightblue;
 }
 
 #bottom{
-	/* background-color: rgba(139, 86, 86, .9); */
+	background-color: rgba(139, 86, 86, .9);
 }
 
 #middle{
 	display:flex;
 	flex:3;
-	/* background-color: rgb(189, 189, 189); */
+	background-color: rgb(189, 189, 189);
 }
 
 

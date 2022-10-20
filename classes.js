@@ -76,8 +76,18 @@ class Deck {
    render(){
     let player1 = document.querySelector('#top')
     let cards = document.createElement('div')
-    cards.textContent = dealtHand;
-    player1.append(cards)
+
+    for (const card in dealtHand){
+        let fullCard = document.createElement('span')
+        fullCard.innerHTML = `
+        Card: ${card.indexOf}
+        Color: ${card.indexOf(color)}
+        `
+        cards.append(card)
+
+    }
+
+    player1.replaceChildren(cards)
 
    }
 

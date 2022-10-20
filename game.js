@@ -23,6 +23,10 @@ class Game {
     const hands = [hand1, hand2];
     console.log(allCards);
     return hands;
-    allCards.render();
+    
   }
 }
+
+allCards.render();
+allCards.render();
+allCards.render();
