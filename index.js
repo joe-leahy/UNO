@@ -2,12 +2,18 @@ const STARTING_HAND = 7;
 const DRAW_FOUR = 4;
 const DRAW_TWO = 2;
 
+// allCards.generateCards(); // all cards in deck
+// allCards.draw([]);
+// allCards.deal(STARTING_HAND);
+const allCards = new Deck();
 
-let allCards = new Deck();
-allCards.generateCards(); // all cards in deck
-allCards.shuffle();
-allCards.draw([]);
-allCards.deal(2 , STARTING_HAND);
+const game = new Game
+game.initialize();
+/** 
+hands = initialize()
+console.log(hands)
+*/ 
+
 
 
 /** 
